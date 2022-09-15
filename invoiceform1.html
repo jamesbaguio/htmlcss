@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invoice Form 1</title>
+    <style>
+      table,th,td,tr{
+        border: 1px solid darkblue;
+      }
+      td{
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <form action="https://google.com" target="_blank">    
+      <fieldset style="border: solid rgba(7, 7, 235, 0.699); background-color: blanchedalmond; ">
+        <legend >Invoice Details</legend>
+        <label >Invoice To:</label>
+        <input name="invoice_to" type="text">
+        <div>
+          <br>
+          <label>Contact#</label>
+          <input name="contact#" type="text" maxlength="12" >
+          <label>Date:</label>
+          <input name="date" type="date">
+        </div>
+      </fieldset>
+
+      <table style="width:100%; border-collapse: collapse;">
+          <thead style="color:darkblue; height:50px; font-size: large; font-family: Arial; background-color: aqua;"> 
+            <tr>
+              <th style="width:60%;"><i>Item Description</th>
+              <th style="width:13%;"><i>Quantity</th>
+              <th><i>Unit Price</th>
+              <th><i>Amount</th>
+            </tr>
+         </thead>
+
+        <tbody style="background-color: rgb(255, 223, 205);">
+          <!--meron siyang "name" na attributes-->   
+          <tr style="text-align:center ;">
+            <td><textarea name="Item-input_1" cols="60" maxlength="100" style="text-align: center;" ></textarea></td>       
+            <td><input type="number" name="quantity1" style="text-align: center; height: 25px;"></td>
+            <td><input type="number" name="unitprice1" style="text-align: center;height: 25px;"></td>
+            <td><input type="number" name="amount1" style="text-align: center;height: 25px;"></td>
+          </tr>
+          <tr style="text-align: center;">
+            <td><textarea name="Item-input_2" id="" cols="60"  maxlength="100" style="text-align: center;"></textarea></td>          
+            <td><input type="number" name="quantity2" style="text-align: center;height: 25px;"></td>
+            <td><input type="number" name="unitprice2" style="text-align: center;height: 25px;"></td>
+            <td><input type="number" name="amount2" style="text-align: center;height: 25px;"></td>
+          </tr>
+          <tr style="text-align: center;">
+            <td><textarea name="Item-input_3" id="" cols="60"  maxlength="100" style="text-align: center;"></textarea></td>          
+            <td><input type="number" name="quantity3" style="text-align: center;height: 25px;"></td>
+            <td><input type="number" name="unitprice3" style="text-align: center;height: 25px;"></td>
+            <td><input type="number" name="amount3" style="text-align: center;height: 25px;"></td>
+          </tr>
+          <tr style="text-align: center;">
+            <td><textarea name="Item-input_4" id="" cols="60"  maxlength="100" style="text-align: center;"></textarea></td>          
+            <td><input type="number" name="quantity4" style="text-align: center;height: 25px;"></td>
+            <td><input type="number" name="unitprice4" style="text-align: center;height: 25px;"></td>
+            <td><input type="number" name="amount4"style="text-align: center;height: 25px;"></td>
+          </tr>
+          <tr style="text-align: center;">
+            <td><textarea name="Item-input_5" id="" cols="60"  maxlength="100" style="text-align: center;"></textarea></td>          
+            <td><input type="number" name="quantity5" style="text-align: center;height: 25px;"></td>
+            <td><input type="number" name="unitprice5" style="text-align: center;height: 25px;"></td>
+            <td><input type="number" name="amount5" style="text-align: center;height: 25px;"></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="text-align:right; color: darkblue;"><b>Subtotal</b></td>          
+            <td><textarea readonly></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="text-align: right; color: darkblue;"><b>Vat12%</b></td>          
+            <td><textarea readonly></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="text-align: right; color: darkblue;"><b>Total</b></td>          
+            <td><textarea readonly></textarea></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <fieldset  style="border: solid rgba(7, 7, 235, 0.699); background-color: blanchedalmond; ">
+        <legend>Additional Details</legend>
+        <label>Payment Method</label>
+        <select name="PaymentOption">
+          <option value="">--Select Payment Option--</option>
+          <option value="gcash">Gcash</option>
+          <option value="CashonDelivery">CashonDeliver</option>
+          <option value="paypal">Paypal</option>
+        </select>
+        <div>
+          <input  type="radio" name="DeliveryAddress" value="Home" id="radio1"><label for="radio1">Home</label>
+          <input type="radio" name="DeliveryAddress" value="Office" id="radio2"><label for="radio2">Office</label>
+        </div>
+        <div>
+          <textarea name="address" id="textarea" cols="60" rows="5" maxlength="500" placeholder="Put Your Complete Address" ></textarea>
+        </div>
+      </fieldset>
+      <div>
+        <input type="submit" placeholder="Submit">
+      </div>
+    </form>  
+  </body>
+</html>
