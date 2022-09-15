@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Invoice Table</title>
+    <!-- Css Dito sa head-->
+
+    <style>
+      table,th,td{
+        border: 1px solid green;
+      }
+      td{
+        text-align: center;
+      }
+      th{
+        padding: 15px;
+      }
+      td{
+        padding: auto;
+      }
+
+    </style>
+  </head>
+
+
+
+<body>
+  
+  <fieldset>
+    <div>
+   <h1 style="text-align:center ; color: green; background-color:greenyellow; border: 1px solid;">Mga Gulay</h1>
+   </div>
+  
+   <!-- <h2>Heading 2</h2> -->
+
+    <table style="width: 100%; border-collapse:collapse;">
+      <thead>
+        <tr>
+            <th>Item Description</th>
+            <th>Quality</th>
+            <th>Unit Price</th>
+            <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:left ;">Green Beans</td>
+          <td>3</td>
+          <td>20</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td style="text-align:left ;">Carrots</td>
+          <td>3</td>
+          <td>15</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td style="text-align:left ;">Sweet Potato</td>
+          <td>5</td>
+          <td>10</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td style="text-align:left ;">Banana</td>
+          <td>1</td>
+          <td>70</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: right;">Subtotal</td>
+          <td>225</td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: right;">VAT(12%)</td>
+          <td>30.6</td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: right;">TOTAL</td>
+          <td>285.6</td>
+        </tr>
+      </tbody>
+    </table>
+  </fieldset>
+</body>
+</html>
