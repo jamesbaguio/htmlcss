@@ -1,7 +1,50 @@
+/* mga property ng css */
+body{
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
 .page-wraper {
+      max-width: 1024px;
+      background-color: aliceblue;
+      margin: 0 auto; /* yung '0' - top,bottom at yung "auto" - left and right */ 
+      padding: 15px 30px 40px 50px ; /* ang "pading" ay kung need mo ng space sa letter mo pwede ring i specify and gamitin ang top,left,bottom,right*/
+}
 
-  max-width: 1024px;
-  background-color: #ccc;
-  margin-top: 0 auto;
-  padding: 60px;
+header{
+  height: 50px;
+  width: 100%;
+  background-color: cyan;
+  text-align: center;
+  font-size: 40px;
+}
+
+.banner{
+  height: 400px;
+  background-image: url("/htmlcss/Images/ocean.jpeg");
+  background-size: cover;
+}
+
+h1{
+  color:blue ;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 50px;
+}
+
+h2{
+  color:blue ;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 50px;
+}
+
+.about-me p{
+  font-size: 25px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+section.about-me{
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
