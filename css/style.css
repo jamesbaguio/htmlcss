@@ -10,15 +10,19 @@ body{
       padding: 15px 30px 40px 50px ; /* ang "pading" ay kung need mo ng space sa letter mo pwede ring i specify and gamitin ang top,left,bottom,right*/
 }
 
-header{
-  height: 50px;
+/* header{
+  height: 30px;
   width: 100%;
   background-color: cyan;
-  text-align: center;
-  font-size: 40px;
-}
+  text-align: left;
+  font-size: 30px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding-left: 5px;
+} */
 
-.banner{
+section.banner{
   height: 400px;
   background-image: url("/htmlcss/Images/ocean.jpeg");
   background-size: cover;
@@ -47,4 +51,89 @@ h2{
 section.about-me{
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+section.my-portfolio div{
+  background-color: grey;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.d-none{
+  display: none;
+}
+
+.d-inline{
+  display: inline;
+  background-color: aqua;
+}
+
+.d-inline.d2{
+  width: 300px;
+ display: inline-block;
+  background-color: red;
+  height: 30px;
+}
+ 
+/* Flex */
+.d-flex{
+  display: flex;
+}
+
+.with-direction {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+/* .with-direction div{
+} */
+/* Pwede tayo mag manipulate dito sa css na hindi ginagalaw sa html */
+.d9{
+order: 1;
+flex-grow: 1;
+}
+
+.d10{
+  order: 2;
+  flex-grow: 1;
+}
+
+.d11{
+order: 3;
+flex-grow: 3;
+}
+
+.d12{
+order: 4;
+flex-grow: 1;
+}
+
+.d13{
+order: 5;
+flex-grow: 1;
+}
+
+/*
+.d-flex1{
+  border: 1px solid black;
+  display: flex;
+  background-color: aqua;
+  /* flex-direction: row;
+  flex-wrap: nowrap; 
+}*/ 
+
+/*
+.d-inline1{
+  border: 1px solid black;
+}*/
+
+.my-portfolio1{
+  flex-wrap: wrap;
+  background-color: ;
+  border: 1px solid black;
+}
+
+.d-flex1>.d-inline1{
+  display: ;
 }
