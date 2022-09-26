@@ -7,7 +7,7 @@ body{
       max-width: 100%;
       background-color: aliceblue;
       margin: 0 auto; /* yung '0' - top,bottom at yung "auto" - left and right */ 
-      padding: 15px 30px 40px 50px ; /* ang "pading" ay kung need mo ng space sa letter mo pwede ring i specify and gamitin ang top,left,bottom,right*/
+      padding: 15px 30px 40px 50px ; /* top right bottom left*/
 }
 
 header{
@@ -134,7 +134,7 @@ flex-grow: 1;
   flex-wrap: wrap;
   background-color: ;
   border: 1px solid black;
-  height: 1103px;
+  height: auto;
 }
 
 .d-flex1>.d-inline1{
@@ -349,8 +349,9 @@ nav ul li:hover a{
   }
 }
 
-/* @media screen and (max-width: 578px){
-  .my-portfolio1{
+ /*@media screen and (max-width: 578px){
+
+  .my-portfolio1 {
     height:1103px;
   }
   

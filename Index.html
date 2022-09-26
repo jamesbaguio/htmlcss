@@ -7,7 +7,63 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js" type="javascript"></script>
     <style>
-     
+
+     .pt-5{
+      padding-bottom: 14rem!important;
+     }
+      .work-education{
+        font-family: 'Times New Roman', Times, serif ;
+      }     
+
+      .work-education .row .col.order-last{
+        border-left: 11px solid green;
+      }
+
+      .work-education .row .col.text-end{
+        border-right: 11px solid green;
+      }
+
+
+
+      .col.text-end::after,
+      .col.order-last::after{
+        content: '*';
+        font-size: 60px;
+       position: relative;
+        right: -32px;
+       top: -63px;
+      }
+      .col.order-last::after{
+        left: -32px;
+      }
+
+
+
+      @media screen and (max-width:768px){
+        .work-education .row .col {
+          display: none;
+        }
+        .work-education .row .col.order-last,
+        .work-education .row .col.text-end {
+          display: block;
+          text-align: center !important; 
+          margin-bottom: 1px;
+        }
+
+        .col.text-end::after,
+      .col.order-last::after{
+        content: '';
+        }
+        
+        .work-education .row .col.order-last{
+        border-left: none;
+      }
+
+      .work-education .row .col.text-end{
+        border-right: none;
+      }
+      }
+      
     </style>
   </head>
   
@@ -87,28 +143,44 @@
           </div>
         </section>
 
-        <section class="work-education">
-          <div class="container pt-5 pb-5">
-            <h3 class="">Educational Attainment</h3>
+         <section class="work-education">
+          <div class="container py-5  my-3" style="background-color: grey; padding: 10px;">
+            <h3 style="text-align: center; margin-bottom: 16px;">Educational Attainment</h3>
+            
             <div class="row">
-              <div class="col text-end">College</div>
+              <div class="col text-end">
+                <h4>College</h4>
+                <h5>Laguna Science and Technology College, Inc</h5>
+                <p>2022</p>
+              </div>
               <div class="col"></div>
             </div>
             <div class="row">
-              <div class="col order-last">Highschool</div>
+              <div class="col order-last"> <!--pwede ring 'col order-last' para mag kapalit-->
+                <h4> Senior High School</h4>
+                <h5>San Pedro Relocation Center National Highschool</h5>
+                <p>2021-2022</p>
+              </div>
+              <div class="col"></div> 
+            </div>
+            <div class="row">
+              <div class="col text-end">
+                <h4>Junior High School</h4>
+                <h5>Liceo De San Pedro</h5>
+                <p>2016-2020</p>
+              </div>
               <div class="col"></div>
             </div>
             <div class="row">
-              <div class="col text-end">Elementary</div>
-              <div class="col"></div>
-            </div>
-            <div class="row">
-              <div class="col order-last">Kinder</div>
+              <div class="col order-last"> <!--pwede ring 'col order-last' para mag kapalit-->
+                <h4>Elementary</h4>
+                <h5>San Roque Elementary School</h5>
+                <p>2011-2016</p>
+              </div>
               <div class="col"></div>
             </div>
           </div>
-        </section> 
-
+         </section>
         
       <footer>
         <a>Link to Facebook</a>
