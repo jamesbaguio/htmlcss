@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h3>Machine Problem 1</h3>
+  <input type="number" placeholder="Odd or Even" id="numb1" value=""/>
+  <button onclick="Check()">Check</button>
+  <div id="result1"></div>
+ 
+  
+  
+  <h3>Machine Problem 2</h3>
+  <input id="input2" type="text" placeholder="Vowell or Consonant" value="" maxlength="1">
+  <button onclick="docheck()">Check</button>
+  <div id="result2"></div>
+
+
+  
+</body>
+<script>
+  function Check(){
+    let value1 = document.getElementById('numb1').value;    
+    if ((value1 % 2) == 0){
+      document.getElementById('result1').innerHTML = "Even";
+    } else{
+      document.getElementById('result1').innerHTML = "Odd";
+    }
+  }
+
+  function docheck(){
+    let value2 = document.getElementById('input2').value;
+    if (value2 == "a" || value2 == "e" || value2 == "i" || value2 == "o" || value2 == "u"){
+      document.getElementById('result2').innerHTML = "The Letter is Vowel";
+    }else{
+    document.getElementById('result2').innerHTML = "The Letter is Consonant";
+    }
+  }
+
+</script>
+
+</html>
